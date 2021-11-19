@@ -8,7 +8,7 @@ WORKDIR /go/src/github.com/latonaio
 
 COPY go.mod .
 
-RUN go build -o data-interface-for-salesforce-contract-get .
+RUN go mod download
 
 COPY . .
 
